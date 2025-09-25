@@ -1,0 +1,328 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Center date in month view grid for Task Calendar */
+.rbc-month-view .rbc-date-cell {
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+  font-weight: 500;
+}
+
+.projects-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  /* Ensure rsuite TimePicker dropdown appears above modal */
+.rs-picker-popup {
+  z-index: 9999 !important;
+  
+} 
+  .projects-scrollbar::-webkit-scrollbar-track {
+    background: #b2b2b2; /* Dark gray */
+    border-radius: 10px;
+  }
+  
+  .projects-scrollbar::-webkit-scrollbar-thumb {
+    background: #edecec; /* Medium gray */
+    border-radius: 10px;
+border: 1px solid #a2a3a4;
+  }
+  
+  .projects-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #f5f6f9; /* Lighter gray on hover */
+  }
+
+
+
+
+
+ .dark .projects-scrollbar::-webkit-scrollbar-track {
+    background: #2d3748; /* Dark gray */
+    border-radius: 10px;
+  }
+  
+  .dark .projects-scrollbar::-webkit-scrollbar-thumb {
+    background: #4a5568; /* Medium gray */
+    border-radius: 10px;
+    border: 2px solid #2d3748;
+  }
+  
+  .dark .projects-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #718096; /* Lighter gray on hover */
+  }
+  html {
+    background-color: white;
+  }
+  
+  html.dark {
+    background-color: #111827; /* Dark background */
+  }
+  .custom-scrollbar::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
+  }  
+  .custom-scrollbar {
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  } 
+  .hidden-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .hidden-scrollbar {
+    scrollbar-width: none;
+  }
+  
+/* Dark Mode for Gantt Container */
+.dark #gantt, 
+.dark .gantt_container {
+  background-color: #1f2937 !important; 
+  color: #ffffff !important;
+}
+
+/* Gantt Grid Headers */
+.dark .gantt_grid_scale, 
+.dark .gantt_task_scale {
+  background-color: #2d3748 !important;
+  color: #ffffff !important;
+  font-weight: bold;
+  border-bottom: 1px solid #4a5568;
+}
+
+/* Gantt Grid Rows */
+.dark .gantt_grid_data .gantt_row {
+  background-color: #1f2937 !important;
+  color: #ffffff !important;
+}
+
+/* Gantt Grid Cell Borders */
+.dark .gantt_grid_data .gantt_cell {
+  border-color: #4a5568 !important;
+  color: #ffffff !important;
+}
+
+/* Empty Gantt Chart Rows */
+.dark .gantt_task_bg {
+  background-color: #1f2937 !important;
+}
+
+/* Task Bars */
+.dark .gantt_task_line {
+  background-color: #c4c4ca !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
+/* Task Labels Inside Bars */
+.dark .gantt_task_content {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+/* Sidebar */
+.dark .sidebar, 
+.dark .project-list {
+  background-color: #1f2937 !important;
+  color: #ffffff !important;
+}
+
+/* Summary Button */
+.dark .summary-button {
+  background-color: #1f2937 !important;
+  color: #ffffff !important;
+  border: 1px solid #4a5568;
+}
+
+/* Scrollbar */
+.dark .gantt_layout_outer::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+.dark .gantt_layout_outer::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 4px;
+}
+
+/* Dark Mode for Gantt Chart Empty Cells */
+.dark .gantt_task_cell,
+.dark .gantt_task_bg {
+  background-color: #1f2937 !important; 
+  border-color: #4a5568 !important;  
+}
+
+/* Dark Mode for Task Timeline Cells */
+.dark .gantt_task_data .gantt_task_row {
+  background-color: #1f2937 !important;
+}
+
+/* Style for today's column header (text + background) */
+.today-header {
+  background-color: #ccd9e8 !important; /* Yellow background */
+  color:  #4884c9!important; /* Ensure text is readable */
+  font-weight: bold;
+}
+
+/* Dark mode adjustment */
+.dark .today-header {
+  background-color: #c2d5eb !important; /* Orange for better contrast */
+  color: #3981d2 !important;
+}
+
+
+
+
+
+/* Overlay green on half of the task line only if task is completed */
+/* Completed Task */
+.completed-task .gantt_task_progress {
+  background: linear-gradient(to right, green 100%, transparent 50%) !important;
+  height: 100%;
+}
+
+
+
+/* In-Progress Task */
+.in-progress-task  {
+  background: linear-gradient(to right, rgb(217, 185, 69) 50%,  rgb(201, 207, 214) 50%) !important;
+  height: 100%;
+}
+
+
+
+
+.gantt_bar_task {
+  background: rgb(201, 207, 214);
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+/* //calendar */
+.dark .rbc-toolbar button {
+  color: #c9cbd0 !important; 
+  font-weight: bold;
+}
+
+.dark .rbc-toolbar button:hover {
+  color: #636464 !important; 
+}
+/* //todays color highlight */
+.dark .rbc-today{
+  background-color:#95b4d7 ;
+}
+/* show more */
+.dark .rbc-show-more, .dark .rbc-show-more:hover{
+  background-color: transparent;
+  color:#7197c2;
+}
+
+/* added for excluding digit in +more in TaskCalendar */
+.rbc-show-more {
+  color: transparent !important;
+  position: relative !important;
+  pointer-events: auto !important;
+}
+
+/* added for excluding digit in +more in TaskCalendar */
+.rbc-show-more::after {
+  content: "+more" !important;
+  color: #7197c2 !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  pointer-events: none !important;
+  font-weight: bold !important;
+}
+
+.dark .rbc-day-bg.rbc-off-range-bg {
+  background-color: #374151 !important;
+}
+/* button focus color (today,back,next) */
+.dark .rbc-toolbar button:focus{
+  color: #636464 !important; 
+}
+
+
+/* Number Picker */
+.dark .rw-widget-input{
+  background-color:#374151 !important;
+  color:#ccd9e8
+}
+
+.dark .rw-widget-container{
+  background-color: #374151 !important;
+}
+
+/* react select dark mode */
+.dark .css-13cymwt-control{    /*initial background color of select;*/
+  background-color: #374151;
+
+}
+.dark .css-1p3m7a8-multiValue,.dark .css-9jq23d{
+background-color: #4a5568;
+color:#e9e9e9
+}
+
+/* react select dropdowns bg and text color */
+.dark .css-1nmdiq5-menu{
+  background-color: #374151;
+  color: #e9e9e9;
+}
+
+/* option hover */
+.dark .css-d7l1ni-option{
+  background-color: #4a5568;
+}
+
+/* select option dropdown height */
+.css-qr46ko{
+  max-height: 200px !important
+} 
+.pmselector .css-qr46ko{
+  max-height: 150px !important;
+}
+
+/* search options */
+.dark .css-1cfo1cf{
+  color:#e9e9e9 !important
+}
+
+/* select options text color  */
+.dark .css-1dimb5e-singleValue{
+  color:#e9e9e9
+}
+
+/* active background of select*/
+.dark .css-t3ipsp-control{
+  background-color: #374151;
+}
+
+/* selected option */
+.dark .css-1xga60f-option{
+  background-color: #3f83e3 !important
+}
+
+/* end of react select */
+
+
+:root {
+  --color-bg: white;
+  --color-text: #111827;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1f2937; /* Tailwind's gray-800 */
+    --color-text: #f9fafb; /* Tailwind's gray-50 */
+  }
+}

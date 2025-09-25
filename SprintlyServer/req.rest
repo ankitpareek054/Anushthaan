@@ -1,0 +1,5 @@
+POST https://sprintlyserver.onrender.com/requests/adminAccessRequestHandler
+Content-Type: application/json
+{
+
+}
