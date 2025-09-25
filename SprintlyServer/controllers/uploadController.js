@@ -6,14 +6,7 @@ import { uploadFileToS3, deleteFilesFromS3, getPresignedUrl} from "../config/S3f
 
 
 
-// const s3 = new S3Client({
-//     region: 'us-east-1', // Directly set the region here
-//     credentials: {
-//         accessKeyId: 'AKIAQ3EGWFXUQUWJQRWM', // Directly set the AWS Access Key ID
-//         secretAccessKey: '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' // Directly set the AWS Secret Access Key
-//     },
 
-// });
 
 
 export const uploadP = async (req, res) => {
