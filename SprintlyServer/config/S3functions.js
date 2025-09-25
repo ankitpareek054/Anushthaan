@@ -4,11 +4,7 @@ import { S3Client,PutObjectCommand, GetObjectCommand,DeleteObjectsCommand } from
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 
 
-//aws  variables
-const bName = 'ankit-aws-sprint';
-const bRegion= 'us-east-1'
-const bAccesKey='AKIAQ3EGWFXU3JCSNJBZ';
-const bSecretAcessKey='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';
+
 
 
 
